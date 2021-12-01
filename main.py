@@ -4,8 +4,8 @@ from Classes import Format
 
 
 def main():
-    accessToken = '05fc1151b9e184e8c2a2b9b8e51134614b4dd95b15be9f912fdfedf229a71b7'
-    url = 'https://zccsyedmujtaba.zendesk.com/api/v2/tickets'
+    accessToken = 'Enter you OAuth Access Token'
+    url = "Enter your Zendesk Ticket's API link"
     message_object = messages.Messages()
     newTicket = Ticket.Ticket(accessToken, url)
     ticketFormat = Format.Format()
