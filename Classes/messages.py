@@ -4,6 +4,10 @@ from warnings import simplefilter
 simplefilter(action='ignore', category=FutureWarning)
 
 class Messages:
+    '''
+    This class provides access to different types of messages that maybe prompted when needed
+    '''
+
     def menu(self):
         menu = BeautifulTable()
         menu.column_headers = ["Command", "Action"]
