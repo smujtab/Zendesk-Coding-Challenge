@@ -5,7 +5,7 @@ import Ticket
 
 
 class MyTestCase(unittest.TestCase):
-    token = "enter your url"
+    token = "enter your OAuth access token"
     url = "enter your url"
 
     #should return a list if the all credentials were valid

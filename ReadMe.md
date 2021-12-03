@@ -16,8 +16,18 @@ project. However, it should be fairly simple on either platform.
 
 1. Open up your terminal and enter the following command:<br>
    ``git clone https://github.com/smujtab/Zendesk-Coding-Challenge.git``
-2. Run the application with the following code:<br>
-`` python3 main.py``
+2. Download pip if NOT already installed using:
+   1. ``curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py``
+   2. Followed by : ``python3 get-pip.py``
+3. Download the required modules:
+   1. ``pip install BeautifulTable``
+   2. ``pip install requests``
+4. Next you will have to change your credentials in the code by opening up ``main.py`` and enter your credentials into <br>``accessToken = "Enter your OAuth access token"`` and<br> 
+``url = "Enter Your tickets api link"``
+   1. **The URL must be your zendesk api link for tickets, ie: ``https://{subdomain}.zendesk.com/api/v2/tickets``**
+   5. See the following page to learn how to get an OAuth access token: ``https://developer.zendesk.com/documentation/ticketing/working-with-oauth/creating-and-using-oauth-tokens-with-the-api/``
+5. Return to the terminal and navigate to the directory, then run the application with the following code:
+   1. `` python3 main.py``
 
 ## Crossroads in design
 
