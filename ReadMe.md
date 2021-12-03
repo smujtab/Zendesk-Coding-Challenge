@@ -12,7 +12,7 @@ that data for the Command Line.
 ### How to run the program 
 
 Since the program is command line based, there may be differences in setting up and navigating to the 
-project. However, it should be fairly simple on either platform.
+project between Mac/OS and Windows. However, it should be fairly simple on either platform.
 
 1. Open up your terminal and enter the following command:<br>
    ``git clone https://github.com/smujtab/Zendesk-Coding-Challenge.git``
@@ -26,7 +26,7 @@ project. However, it should be fairly simple on either platform.
 ``url = "Enter Your tickets api link"``
    1. **The URL must be your zendesk api link for tickets, ie: ``https://{subdomain}.zendesk.com/api/v2/tickets``**
    5. See the following page to learn how to get an OAuth access token: ``https://developer.zendesk.com/documentation/ticketing/working-with-oauth/creating-and-using-oauth-tokens-with-the-api/``
-5. Return to the terminal and navigate to the directory, then run the application with the following code:
+5. Return to the terminal and navigate to the project directory, then run the application with the following code:
    1. `` python3 main.py``
 
 ## Crossroads in design
@@ -43,7 +43,7 @@ code to be much cleaner and easier to understand.
 #### The program has 4 classes:
 
 1. ``main.py`` - the main script of the program, calls all the different classes and functions
-2. ``Ticket.py`` - This class contains the bulk of theA API implementation required for the program, 
+2. ``Ticket.py`` - This class contains the bulk of the API implementation required for the program, 
 ie getting and returning tickets
 3. ``Format.py`` - takes ticket data and converts it into beautiful tables 
 (literally, the module used is called BeautifulTable) for the cli.
@@ -62,10 +62,10 @@ in the code:
 1. It made tracking the page number much easier as the code no longer had to create a different
 function to reset the page count, instead it just manually incremented depending on if there was a next
 page existed or not
-2. It made getting the next page easier as well as the class attribute ``nextPgae``could
+2. It made getting the next page easier as well as the class attribute ``nextPage``could
 just be updated to the current response's ``next`` url link. 
 3. It allowed for easier implementation of continuous scrolling past the last page to the front page
-through checking the `has_more` value of the ticket response. If false, then the ``Ticket.nextPage`` attribute
+through checking the `has_more` value of the ticket response. If false, then the ``nextPage`` attribute
 would just be reset to the first page URL
 
 ### Aspect # 3: OAuth vs Basic Authentication
