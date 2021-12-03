@@ -14,6 +14,12 @@ class Ticket:
         # this is a separate api link that will be updated as the scroll function is used
         self.nextPage = self.link +'.json?page[size]=25'
         self.page = 0
+        # checks if the link entered is valid
+        try:
+            requests.get(self.link+'.json?page[size]=25', headers=self.header)
+        except:
+            print("Unable to connect to your API link - Please check your URL!")
+            exit()
 
     def scroll(self):
         '''

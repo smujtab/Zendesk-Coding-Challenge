@@ -6,17 +6,14 @@ import requests
 # Setting up all the required objects, links, and tokens
 # Please enter your own OAuth access token here and your ticket api link as well
 class main:
+    print(messages.Messages().welcome())
     accessToken = 'Enter your OAuth access token'
     url = "Enter Your tickets api link"
-    response = requests.get(url, {"Authorization": "Bearer " + accessToken})
     # check if the connection to the API was successful
-    if response.status_code != 200:
-        print("Unable to connect to API - Status code: " + str(response.status_code))
-        exit()
     message_object = messages.Messages()
     newTicket = Ticket.Ticket(accessToken, url)
     ticketFormat = Format.Format()
-    print(messages.Messages().welcome())
+
 
 
     def main(self):
