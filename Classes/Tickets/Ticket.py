@@ -18,7 +18,7 @@ class Ticket:
         try:
             requests.get(self.link+'.json?page[size]=25', headers=self.header)
         except:
-            print("Unable to connect to your API link - Please check your URL!")
+            print("Unable to connect to your API link - Please check your URL and Token!")
             exit()
 
     def scroll(self):

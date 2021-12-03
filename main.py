@@ -1,12 +1,11 @@
 from Classes import messages
 from Classes.Tickets import Ticket
 from Classes import Format
-import requests
 
-# Setting up all the required objects, links, and tokens
 # Please enter your own OAuth access token here and your ticket api link as well
 class main:
     print(messages.Messages().welcome())
+    # Setting up all the required objects, links, and tokens
     accessToken = 'Enter your OAuth access token'
     url = "Enter Your tickets api link"
     newTicket = Ticket.Ticket(accessToken, url)
