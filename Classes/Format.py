@@ -16,7 +16,6 @@ class Format:
         '''
         Extracts certain ticket details from a single ticket (in the form of a dictionary) and
         returns that as a list.
-        This function will make generating Tables much easier
 
         :param ticket_details:
         :return: A list of the extracted ticket details

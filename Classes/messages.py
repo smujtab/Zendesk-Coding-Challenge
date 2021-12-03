@@ -13,7 +13,7 @@ class Messages:
         menu.column_headers = ["Command", "Action"]
         menu.append_row(["'single'", " View a single ticket"])
         menu.append_row(["'all'", " View all tickets"])
-        menu.append_row(["'scroll'", " View next page of tickets"])
+        menu.append_row(["'next'", " View next page of tickets"])
         menu.append_row(["'menu'", " View Menu"])
         menu.append_row(["'quit'", " Exit Ticket Viewer"])
         return "Here is our menu " + "\n" +str(menu)
