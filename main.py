@@ -9,12 +9,9 @@ class main:
     print(messages.Messages().welcome())
     accessToken = 'Enter your OAuth access token'
     url = "Enter Your tickets api link"
-    # check if the connection to the API was successful
-    message_object = messages.Messages()
     newTicket = Ticket.Ticket(accessToken, url)
     ticketFormat = Format.Format()
-
-
+    message_object = messages.Messages()
 
     def main(self):
         '''
@@ -40,7 +37,6 @@ class main:
             command = input(self.message_object.command())
 
         print(self.message_object.goodBye())
-
 
 if __name__ == "__main__":
     main.main(main)
